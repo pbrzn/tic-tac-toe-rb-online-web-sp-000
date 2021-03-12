@@ -43,9 +43,9 @@ end
 def current_player(board)
   turns=turn_count(board)
   if turns==0 || turns%2==0
-    value="X"
+    return value="X"
   elsif turns>0 && turns%2!=0
-    value="O"
+    return value="O"
   else
     nil
   end
